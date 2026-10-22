@@ -1,0 +1,105 @@
+*PPD-Adobe: "4.3"
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "p800.ppd"
+*Manufacturer: "BY"
+*Product: "(P800)"
+*ModelName: "P800"
+*ShortNickName: "BY P800 A4 Thermal"
+*NickName: "BY P800 A4 Thermal (ESC/POS raster)"
+*1284DeviceID: "MFG:BY;MDL:P800;CMD:ESC;"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 2.4
+*cupsModelNumber: 0
+*cupsFilter: "application/vnd.cups-raster 0 rastertop800"
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4/A4 (210 x 297 mm): "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageSize Letter/Letter (216 x 279 mm): "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A4/A4 (210 x 297 mm): "<</PageSize[595 842]/ImagingBBox null>>setpagedevice"
+*PageRegion Letter/Letter (216 x 279 mm): "<</PageSize[612 792]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea A4/A4: "0 0 595 842"
+*ImageableArea Letter/Letter: "0 0 612 792"
+
+*DefaultPaperDimension: A4
+*PaperDimension A4/A4: "595 842"
+*PaperDimension Letter/Letter: "612 792"
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 20 AnySetup *Resolution
+*DefaultResolution: 203dpi
+*Resolution 203dpi/203 dpi: "<</HWResolution[203 203]/cupsBitsPerColor 8/cupsColorSpace 0/cupsColorOrder 0>>setpagedevice"
+*CloseUI: *Resolution
+
+*OpenUI *ColorModel/Color Model: PickOne
+*OrderDependency: 10 AnySetup *ColorModel
+*DefaultColorModel: Gray
+*ColorModel Gray/Grayscale: "<</cupsColorSpace 0/cupsColorOrder 0/cupsBitsPerColor 8>>setpagedevice"
+*CloseUI: *ColorModel
+
+*OpenUI *P800Mode/Rendering: PickOne
+*OrderDependency: 30 AnySetup *P800Mode
+*DefaultP800Mode: Dither
+*P800Mode Dither/Dither (photos, screenshots): ""
+*P800Mode Threshold/Threshold (crisp text, tables): ""
+*CloseUI: *P800Mode
+
+*OpenUI *P800Threshold/Threshold Level: PickOne
+*OrderDependency: 31 AnySetup *P800Threshold
+*DefaultP800Threshold: T160
+*P800Threshold T96/Darker text drops out (96): ""
+*P800Threshold T128/Normal (128): ""
+*P800Threshold T160/Bolder (160): ""
+*P800Threshold T192/Boldest (192): ""
+*CloseUI: *P800Threshold
+
+*OpenUI *P800Offset/Left Offset: PickOne
+*OrderDependency: 32 AnySetup *P800Offset
+*DefaultP800Offset: Center
+*P800Offset Center/Centered on print head: ""
+*P800Offset L0/0 dots: ""
+*P800Offset L8/8 dots (1 mm): ""
+*P800Offset L16/16 dots (2 mm): ""
+*P800Offset L24/24 dots (3 mm): ""
+*P800Offset L32/32 dots (4 mm): ""
+*P800Offset L40/40 dots (5 mm): ""
+*P800Offset L48/48 dots (6 mm): ""
+*CloseUI: *P800Offset
+
+*OpenUI *P800Trim/Trim Blank Bottom: Boolean
+*OrderDependency: 33 AnySetup *P800Trim
+*DefaultP800Trim: True
+*P800Trim True/On: ""
+*P800Trim False/Off: ""
+*CloseUI: *P800Trim
+
+*OpenUI *P800Feed/Feed After Page: PickOne
+*OrderDependency: 34 AnySetup *P800Feed
+*DefaultP800Feed: Feed6
+*P800Feed Feed0/None: ""
+*P800Feed Feed6/6 lines: ""
+*P800Feed Feed24/24 lines: ""
+*P800Feed Feed48/48 lines: ""
+*CloseUI: *P800Feed
+
+*DefaultFont: Courier
+*% End of p800.ppd
